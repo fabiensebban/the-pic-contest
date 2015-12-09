@@ -32,7 +32,7 @@ class Config
         /**
          * Define relative base path.
          */
-        define('DIR', 'http://pic-contest.herokuapp.com/');
+        define('DIR', 'https://pic-contest.herokuapp.com/');
 
         /**
          * Set default controller and method for legacy calls.
