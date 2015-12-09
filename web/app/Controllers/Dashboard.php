@@ -12,6 +12,7 @@ namespace Controllers;
 
 use Core\View;
 use Core\Controller;
+use Helpers\Url;
 
 class Dashboard extends Controller
 {
@@ -30,14 +31,24 @@ class Dashboard extends Controller
      */
     public function index()
     {
-        $data['title'] = $this->language->get('page_title');
-        $data['logout'] = $this->language->get('logout');
-        //$data['welcome_message'] = $this->language->get('welcome_message');
+        //Is user admin ?
+        if(false)
+        {
+            $data['title'] = $this->language->get('page_title');
+            $data['logout'] = $this->language->get('logout');
+            //$data['welcome_message'] = $this->language->get('welcome_message');
 
-        View::renderTemplate('header', $data);
-        View::renderTemplate('main_header', $data);
-        View::render('dashboard/dashboard', $data);
-        View::renderTemplate('footer');
+            View::renderTemplate('header', $data);
+            View::renderTemplate('facebookSDK');
+            View::renderTemplate('main_header', $data);
+            View::render('dashboard/dashboard', $data);
+            View::renderTemplate('footer');
+        }
+        
+        else 
+        {
+            Url::redirect('index');
+        }
     }
 
 }
