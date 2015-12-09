@@ -33,7 +33,7 @@ class Config
          * Define relative base path.
          */
         define('DIR', 'https://pic-contest.herokuapp.com/');
-        
+
         /**
          * Define relative public path.
          */
