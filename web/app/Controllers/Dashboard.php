@@ -32,7 +32,7 @@ class Dashboard extends Controller
     public function index()
     {
         //Is user admin ?
-        if(false)
+        if(true)
         {
             $data['title'] = $this->language->get('page_title');
             $data['logout'] = $this->language->get('logout');
@@ -44,7 +44,7 @@ class Dashboard extends Controller
             View::render('dashboard/dashboard', $data);
             View::renderTemplate('footer');
         }
-        
+
         else 
         {
             Url::redirect('index');
