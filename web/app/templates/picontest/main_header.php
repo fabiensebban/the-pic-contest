@@ -11,9 +11,9 @@ use Helpers\Url;
 	<!-- Logo -->
 	<a href="/" class="logo">
 	  <!-- mini logo for sidebar mini 50x50 pixels -->
-	  <span class="logo-mini"><img src="<?php echo PUBLIC_DIR; ?>/img/picontest_logo.png" height="30" alt="Picontest Logo"></span>
+	  <span class="logo-mini"><img src="<?php echo PUBLIC_DIR; ?>img/picontest_logo.png" height="30" alt="Picontest Logo"></span>
 	  <!-- logo for regular state and mobile devices -->
-	  <span class="logo-lg"><img src="<?php echo PUBLIC_DIR; ?>/img/picontest_logo.png" height="30" alt="Picontest Logo"><b>PiC</b>ONTEST</span>
+	  <span class="logo-lg"><img src="<?php echo PUBLIC_DIR; ?>img/picontest_logo.png" height="30" alt="Picontest Logo"><b>PiC</b>ONTEST</span>
 	</a>
 
 	<!-- Header Navbar -->
@@ -30,7 +30,7 @@ use Helpers\Url;
 				<!-- Menu Toggle Button -->
 				<a href="/logout">
 				  <!-- The user image in the navbar-->
-				  <img src="<?php echo PUBLIC_DIR; ?>/img/avatar5.png" class="user-image" alt="User Image">
+				  <img src="<?php echo PUBLIC_DIR; ?>img/avatar5.png" class="user-image" alt="User Image">
 				  <!-- hidden-xs hides the logout txt on small devices so only the image appears. -->
 				  <span class="hidden-xs"><?php echo $data['logout']; ?> </span><span> <i class="fa fa-power-off"></i></span>
 				</a>
@@ -49,7 +49,7 @@ use Helpers\Url;
   <!-- Sidebar user panel (optional) -->
   <div class="user-panel">
     <div class="pull-left image">
-      <img src="<?php echo PUBLIC_DIR; ?>/img/avatar5.png" class="img-circle" alt="User Image">
+      <img src="<?php echo PUBLIC_DIR; ?>img/avatar5.png" class="img-circle" alt="User Image">
     </div>
     <div class="pull-left info">
       <p>U'ness Moumou</p>

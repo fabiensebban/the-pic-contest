@@ -24,6 +24,21 @@ class Config
      */
     public function __construct()
     {
+        //Change URL params
+        if (defined('ENVIRONMENT')) {
+            switch (ENVIRONMENT) {
+                case 'development':
+                    define('ENV', 'dev');
+                    define('PROTOCOL', 'http');
+                    break;
+                case 'production':
+                    define('ENV', '');
+                    define('PROTOCOL', 'https');
+                    break;
+                default:
+                    exit('The application environment is not set correctly.');
+            }
+        }
         /**
          * Turn on output buffering.
          */
@@ -32,12 +47,12 @@ class Config
         /**
          * Define relative base path.
          */
-        define('DIR', 'https://pic-contest.herokuapp.com/');
+        define('DIR', PROTOCOL .'://pic-contest'. ENV .'.herokuapp.com/');
 
         /**
          * Define relative public path.
          */
-        define('PUBLIC_DIR', 'https://pic-contest.herokuapp.com/');
+        define('PUBLIC_DIR', PROTOCOL .'://pic-contest'. ENV .'.herokuapp.com/public/');
 
         /**
          * Set default controller and method for legacy calls.
