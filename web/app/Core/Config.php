@@ -75,27 +75,27 @@ class Config
         /**
          * Database engine default is mysql.
          */
-        define('DB_TYPE', 'mysql');
+        define('DB_TYPE', 'pgsql');
 
         /**
          * Database host default is localhost.
          */
-        define('DB_HOST', 'localhost');
+        define('DB_HOST', 'ec2-54-204-8-224.compute-1.amazonaws.com');
 
         /**
          * Database name.
          */
-        define('DB_NAME', 'picontest_db');
+        define('DB_NAME', 'd9sajt9tcst8jb');
 
         /**
          * Database username.
          */
-        define('DB_USER', 'root');
+        define('DB_USER', 'zonmcwaicehuik');
 
         /**
          * Database password.
          */
-        define('DB_PASS', 'root');
+        define('DB_PASS', 'LkDPfGNZjOLBC6LeheOshQ0_Y0');
 
         /**
          * PREFER to be used in database calls default is smvc_
