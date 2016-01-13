@@ -17,6 +17,7 @@ Router::any('', 'Controllers\Dashboard@index');
 Router::any('index', 'Controllers\Welcome@index');
 Router::any('fr/dashboard', 'Controllers\Dashboard@index');
 Router::any('subpage', 'Controllers\Welcome@subPage');
+Router::any('contest/index', 'Controllers\Contest@index');
 
 /** Module routes. */
 $hooks = Hooks::get();

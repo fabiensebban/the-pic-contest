@@ -38,11 +38,11 @@ class Dashboard extends Controller
             $data['logout'] = $this->language->get('logout');
             //$data['welcome_message'] = $this->language->get('welcome_message');
 
-            View::renderTemplate('header', $data);
-            View::renderTemplate('facebookSDK');
-            View::renderTemplate('main_header', $data);
+            View::renderTemplate('backoffice/header', $data);
+            View::renderTemplate('backoffice/facebookSDK');
+            View::renderTemplate('backoffice/main_header', $data);
             View::render('dashboard/dashboard', $data);
-            View::renderTemplate('footer');
+            View::renderTemplate('backoffice/footer');
         }
 
         else 
