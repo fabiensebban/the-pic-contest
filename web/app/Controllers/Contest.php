@@ -25,6 +25,11 @@ class Contest extends Controller
 
     public function index()
     {
+
+    }
+    
+    public function vote()
+    {
         $data['title'] = $this->language->get('contest');
 
         View::renderTemplate('header', $data);
