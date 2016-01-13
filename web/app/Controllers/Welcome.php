@@ -33,12 +33,24 @@ class Welcome extends Controller
      */
     public function index()
     {
-        $data['title'] = $this->language->get('welcome_text');
-        $data['welcome_message'] = $this->language->get('welcome_message');
+        /*$data['title'] = $this->language->get('welcome_text');
+        $data['welcome_message'] = $this->language->get('welcome_message');*/
+		
+		$bdd = pg_connect("host=ec2-54-204-8-224.compute-1.amazonaws.com port=5432 dbname=d9sajt9tcst8jb user=zonmcwaicehuik password=LkDPfGNZjOLBC6LeheOshQ0_Y0");
+		$result = pg_query($bdd, "SELECT theme FROM concours");
+		if (!$result) {
+		  echo "Une erreur s'est produite.\n";
+		  exit;
+		}
 
-        View::renderTemplate('header', $data);
+		while ($row = pg_fetch_row($result)) {
+		  echo "Theme: $row[0]";
+		  echo "<br />\n";
+		}
+
+        /*View::renderTemplate('header', $data);
         View::render('welcome/welcome', $data);
-        View::renderTemplate('footer', $data);
+        View::renderTemplate('footer', $data);*/
     }
 
     /**

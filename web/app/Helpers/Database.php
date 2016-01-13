@@ -58,7 +58,8 @@ class Database extends PDO
             // I've run into problem where
             // SET NAMES "UTF8" not working on some hostings.
             // Specifiying charset in DSN fixes the charset problem perfectly!
-            $instance = new Database("$type:host=$host;dbname=$name;charset=utf8", $user, $pass);
+            //$instance = new Database("$type:host=$host;dbname=$name;charset=utf8", $user, $pass);
+			$instance = pg_connect("host=$host port=5432 dbname=$name user=$user password=$pass");
             $instance->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
             // Setting Database into $instances to avoid duplication
