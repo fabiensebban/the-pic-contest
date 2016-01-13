@@ -10,8 +10,15 @@
     <meta name="description" content="Source code generated using layoutit.com">
     <meta name="author" content="LayoutIt!">
 
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-
+    <!-- CSS -->
+    <?php
+    Assets::css(array(
+      '//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css',
+      '//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css',
+      '//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css',
+      Url::templatePath() . 'backoffice/css/AdminLTE.css',
+      Url::templatePath() . 'backoffice/css/skins/skin-blue.css',
+    ));
+    ?>
   </head>
   <body>

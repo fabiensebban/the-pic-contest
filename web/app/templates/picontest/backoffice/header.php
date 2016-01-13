@@ -33,8 +33,8 @@ $hooks = Hooks::get();
 		'//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css',
 		'//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css',
 		'//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css',
-		Url::templatePath() . 'css/AdminLTE.css',
-		Url::templatePath() . 'css/skins/skin-blue.css',
+		Url::templatePath() . 'backoffice/css/AdminLTE.css',
+		Url::templatePath() . 'backoffice/css/skins/skin-blue.css',
 	));
 
 	//hook for plugging in css

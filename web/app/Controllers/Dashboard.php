@@ -39,7 +39,6 @@ class Dashboard extends Controller
             //$data['welcome_message'] = $this->language->get('welcome_message');
 
             View::renderTemplate('backoffice/header', $data);
-            View::renderTemplate('backoffice/facebookSDK');
             View::renderTemplate('backoffice/main_header', $data);
             View::render('dashboard/dashboard', $data);
             View::renderTemplate('backoffice/footer');

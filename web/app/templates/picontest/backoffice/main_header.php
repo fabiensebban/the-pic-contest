@@ -24,18 +24,7 @@ use Helpers\Url;
 		</a>
 		<!-- Navbar Right Menu -->
 		<div class="navbar-custom-menu">
-			<ul class="nav navbar-nav">
-				<!-- Logout btn -->
-				<li class="dropdown user user-menu">
-				<!-- Menu Toggle Button -->
-				<a href="/logout">
-				  <!-- The user image in the navbar-->
-				  <img src="<?php echo PUBLIC_DIR; ?>img/avatar5.png" class="user-image" alt="User Image">
-				  <!-- hidden-xs hides the logout txt on small devices so only the image appears. -->
-				  <span class="hidden-xs"><?php echo $data['logout']; ?> </span><span> <i class="fa fa-power-off"></i></span>
-				</a>
-				</li>
-			</ul>
+			
 		</div>
   	</nav>
 </header>
