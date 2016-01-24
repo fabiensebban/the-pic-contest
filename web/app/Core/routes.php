@@ -22,6 +22,9 @@ Router::any('fr/dashboard', 'Controllers\Dashboard@index');
 
 //Contest
 Router::any('contest/index', 'Controllers\Contest@index');
+//Login routes
+Router::any('apps', 'Controllers\Login@index');
+Router::get('apps/jsredirect', 'Controllers\Login@jsRedirect');
 
 //BackOffice
 Router::any('backoffice/contest/create', 'Controllers\backoffice\Contest@create');
