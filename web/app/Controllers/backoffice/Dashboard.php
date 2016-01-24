@@ -49,5 +49,4 @@ class Dashboard extends Controller
             Url::redirect('index');
         }
     }
-
 }

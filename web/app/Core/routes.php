@@ -12,12 +12,19 @@ use Core\Router;
 use Helpers\Hooks;
 
 /** Define routes. */
-Router::any('', 'Controllers\Dashboard@index');
+
 //Welcome A MODIFFIER
 Router::any('index', 'Controllers\Welcome@index');
-Router::any('fr/dashboard', 'Controllers\Dashboard@index');
 Router::any('subpage', 'Controllers\Welcome@subPage');
+
+Router::any('', 'Controllers\Dashboard@index');
+Router::any('fr/dashboard', 'Controllers\Dashboard@index');
+
+//Contest
 Router::any('contest/index', 'Controllers\Contest@index');
+
+//BackOffice
+Router::any('backoffice/contest/create', 'Controllers\backoffice\Contest@create');
 
 /** Module routes. */
 $hooks = Hooks::get();

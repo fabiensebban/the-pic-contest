@@ -47,12 +47,12 @@ class Config
         /**
          * Define relative base path.
          */
-        define('DIR', PROTOCOL .'://pic-contest'. ENV .'.herokuapp.com/');
+        define('DIR', PROTOCOL .'://the-pic-contest'. ENV .'.herokuapp.com/');
 
         /**
          * Define relative public path.
          */
-        define('PUBLIC_DIR', PROTOCOL .'://pic-contest'. ENV .'.herokuapp.com/public/');
+        define('PUBLIC_DIR', PROTOCOL .'://the-pic-contest'. ENV .'.herokuapp.com/public/');
 
         /**
          * Set default controller and method for legacy calls.
@@ -83,6 +83,10 @@ class Config
         define('DB_HOST', 'ec2-54-204-8-224.compute-1.amazonaws.com');
 
         /**
+         * Database host default is localhost.
+         */
+        define('DB_PORT', '5432');
+        /**
          * Database name.
          */
         define('DB_NAME', 'd9sajt9tcst8jb');
@@ -96,6 +100,11 @@ class Config
          * Database password.
          */
         define('DB_PASS', 'LkDPfGNZjOLBC6LeheOshQ0_Y0');
+
+        /**
+         * Database password.
+         */
+        define('DB_CONFIG', "host=" . DB_HOST . " port=" . DB_PORT . " dbname=" . DB_NAME . " user=" . DB_USER . " password=" . DB_PASS);
 
         /**
          * PREFER to be used in database calls default is smvc_

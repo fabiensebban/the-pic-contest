@@ -29,8 +29,24 @@ $hooks = Hooks::get();
 $hooks->run('js');
 
 //hook for plugging in code into the footer
-$hooks->run('backoffice/footer');
+$hooks->run('footer');
+
+
+if($data['js-datePlaceholder'])
+{
+	Assets::js(array(
+                    Url::templatePath() . 'backoffice/js/jquery.inputmask.js',
+                    Url::templatePath() . 'backoffice/js/jquery.inputmask.extensions.js',
+                    Url::templatePath() . 'backoffice/js/jquery.inputmask.date.extensions.js',
+                    Url::templatePath() . 'backoffice/js/datePlaceholder.js'
+                    ));
+}
+
 ?>
 
+
+<script>
+
+</script>
 </body>
 </html>

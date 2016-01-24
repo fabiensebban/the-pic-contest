@@ -7,7 +7,8 @@ return array(
 	// Header
 	'page_title' => 'Bienvenue',
 	'logout' => 'Deconnexion',
-	
+	'createContest' => 'Creation concours',
+
 	//Container
 
 	//Footer
